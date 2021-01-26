@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+  overflow: hidden;
+}
+.body {
+  height: 100%;
+}
+.cabezera {
+  margin-top: 20px;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  height: 100vh;
+}
+.gameboard {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 60vh;
+  max-height: 60vh;
+  margin: 130px auto;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.celeste {
+  height: 100%;
+  background-color: #22a6b3;
+}
+.celeste.light {
+       background: #9adde4;
+}
+.violeta {
+  height: 100%;
+  background-color: #be2edd;
+}
+.violeta.light {
+  background: #d68ae6;
+}
+.naranja {
+  height: 100%;
+  background-color: #f0932b;
+}
+.naranja.light {
+  background: #e9b479;
+}
+.verde {
+  height: 100%;
+  background-color: #6ab04c;
+}
+.verde.light {
+  background: #bdda68;
+}
+.btn-start {
+  font-family: serif;
+  width: 400px;
+  height: 100px;
+  background: #ecf0f1;
+  color: #2c3e50;
+  font-size: 3rem;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 200px);
+  border: solid black;
+}
+.fadeInDown {
+  -webkit-animation-duration: 1.6s;
+  animation-duration: 1.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0.1;
+    -webkit-transform: translate3d(0, 300%,0);
+    transform: translate3d(0, 300%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 90%,0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+.hide {
+  display: none;
+}
